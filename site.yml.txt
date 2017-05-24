@@ -1,0 +1,5 @@
+  - name: Check Firewalld Service
+    hosts: all
+    
+    roles:
+      - role: firewalld
