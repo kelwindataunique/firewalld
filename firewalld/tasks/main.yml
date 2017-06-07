@@ -1,6 +1,7 @@
 ---
 - name: Check Firewalld Service
   service: name=firewalld
+  become: true
   register: firewall
   
 - debug: var=firewall
