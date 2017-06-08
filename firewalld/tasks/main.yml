@@ -1,6 +1,6 @@
 ---
 - name: Check Firewalld Service
-  service: name=firewalld
+  service: name={{ services }}
   become: true
   register: firewall
   
