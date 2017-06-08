@@ -1,5 +1,8 @@
   - name: Check Firewalld Service
     hosts: all
     
+    vars:
+        services: "firewalld"
+    
     roles:
       - role: firewalld
